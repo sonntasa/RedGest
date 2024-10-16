@@ -1,0 +1,44 @@
+%! TEX root = ../main.rnw
+EEG activity was continuously recorded from 70
+Ag/AgCl electrodes over midline electrodes Fpz, AFz, Fz, FCz, Cz, CPz, Pz, POz,
+Oz, and Iz, over the left hemisphere from electrodes IO1, Fp1, AF3, AF7, F1,
+F3, F5, F7, F9, FC1, FC3, FC5, FT7, C1, C3, C5, M1, T7, CP1, CP3, CP5, TP7, P1,
+P3, P5, P7, O9, PO3, PO7, O1, and from the homologue electrodes over the right
+hemisphere using a BIOSEMI Active-Two amplifier system. Two non-standard
+electrodes (PO9 and PO10) were positioned at 33\% and 66\% of the M1-Iz
+distance (M2-Iz for the right hemisphere). Two additional electrodes (Common
+Mode Sense [CMS] active electrode and Driven Right Leg [DRL] passive electrode)
+were used as reference and ground electrodes, respectively
+(cf., www.biosemi/faq/cms\&drl.htm). EEG and EOG recordings were sampled at 1024 Hz.
+Vertical electroocular (vEOG) and horizontal EOG (hEOG) waveforms were
+calculated offline as follows: vEOG(t) = Fp1(t) minus IO1(t) and hEOG(t) =
+F9(t) minus F10(t). All EEG/ERP analysis was performed using available MATLAB
+toolboxes (EEGLAB: \textcite{delorme_eeglab_2004}; FieldTrip:
+\textcite{oostenveld_fieldtrip_2011} and custom MATLAB scripts). Continuous EEG and EOG
+activity was high-pass filtered (0.1 Hz) and re-referenced to the average of
+all electrodes. Data were time-locked to feedback onset (Feedback-Locked). EEG
+data processing steps were as follows: First, epochs containing extreme values
+from non-neural and non-ocular sources (e.g., amplifier blockings) were
+removed, as were trials containing values exceeding ±75 \textmu V in multiple
+electrodes that were not related to pro-typical eye movements (e.g., large head
+movements). Subsequently, noisy electrodes were identified and excluded by
+calculating z-scored variance measures across all electrodes and excluding
+electrodes with a value greater than 3 SDs whose activity was uncorrelated to
+either hEOG or vEOG activity. ICA was performed on this \enquote{cleaned} EEG
+data set via runica \parencite[see][]{delorme_eeglab_2004, makeig_blind_1997} that
+implements infomax ICA algorithm \parencite[][]{bell_information-maximization_1995}.
+ICA components representing ocular activity (blinks and horizontal eye
+movements) were automatically identified using z-scored measures (> 3 SDs) of
+the absolute correlation between the ICA component and the recorded hEOG and
+vEOG activity (confirmed via visual inspection of ICA component topographies
+and time-course). Identified components were subtracted from the EEG dataset.
+Previously removed noisy channels (if any) were interpolated using the average
+of neighbouring channels within a specified distance (4 cm and 3-4 neighbors per
+electrode) in order to ensure a full electrode array for each participant.
+Subsequently, artifacts (EEG activity exceeding ±75 \textmu V) were corrected in a
+single trial/single electrode correction procedure with the constraint that all
+neighbouring electrodes were artifact free. A final stage of artifact rejection
+excluded remaining trials with activity exceeding ±75 \textmu V in any electrode. A
+similar methodological procedure for the automatic detection and removal of
+ocular-based artifacts is implemented in \textcite{nolan_faster_2010}. The
+resulting ERP waveforms were low-pass filtered (30 Hz, two-pass 36 dB/octave).
