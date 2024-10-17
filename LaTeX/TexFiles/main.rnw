@@ -13,21 +13,15 @@
 %%%%%%%%%%%%%%%%
 \title{Title of the paper}
 \shorttitle{Short title}
-\authorsnames{author1firstName author1secondName}
+\authorsnames[1, 1, 1]{Samuel Sonntag, Ian Grant Mackenzie, Carolin Dudschig}
 \authorsaffiliations{{Department of Psychology, University of Tübingen}}
 \leftheader{author1secondName}
 \authornote{%
-    \noindent%
-    Address editorial correspondence to:\\
-    author1firstName author1secondName\\
-    University of XXX\\
-    Address 1\\
-    Address 2\\
-    Address 3\\
-    Email: xxx.xxx@uni-xxx\\
-    Tel: +xx xxx-xxxx
+  Correspondence concerning this article should be addressed to Samuel
+  Sonntag, Department of Psychology, Research Group Language and Cognition, 
+  University of Tübingen, Schleichstraße 4, 72076 Tübingen, Germany. Email:
+  samuel.sonntag@uni-tuebingen.de
 }
-
 
 %%%%%%%%%%%%%%
 %  Abstract  %
@@ -40,8 +34,7 @@
 %%%%%%%%%%%%%%
 \begin{document}
 \maketitle
-\justifying
-\setlength\parindent{12mm}
+\setlength\parindent{0.5in}
 
 \section{Introduction}
 \label{sec:introduction}
