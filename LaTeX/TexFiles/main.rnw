@@ -26,7 +26,31 @@
 %%%%%%%%%%%%%%
 %  Abstract  %
 %%%%%%%%%%%%%%
-\abstract{}
+\abstract{Language is multimodal in nature. It has long become accepted
+consensus that verbal and gestural information are integrated during
+processing to form an understanding. To further investigate these processes,
+within the current experiments, each trial started with the presentation of a
+question (\enquote{\textit{Is the ball in the blue/green box?}}) and below, the
+presentation of both a blue and a green box on the bottom left and right of
+the screen. This question was then succeeded by the presentation of a video
+of an actor answering the question by uttering \enquote{\textit{yes}} or 
+\enquote{\textit{no}}, while (most of the time) also performing a gesture 
+referring to affirmation or negation (rejection). Either modality could be
+(depending on the current instruction) relevant or irrelevant to answering the
+previously posed question and subsequently accompanied by either matching,
+mismatching or non-existent information, conveyed by the currently irrelevant 
+modality. In a previous experiment conducted in our lab (experiment 1), 
+matching cues (gestural and verbal information match) were 
+processed faster than mismatching cues (gestural and verbal information 
+mismatch), with this effect being larger for \enquote{\textit{yes}} (affirmative) than
+\enquote{\textit{no}} (negated answers), pointing to an instant integration of
+verbal and non-verbal information. Within the current experiments, the
+influence of these factors will be re-investigated, with the addition of a
+unimodal condition, both for head gestures (\textit{head shake/nod}; Experiment
+2.1) and hand gestures (\textit{thumbs up/down}; Experiment 2.2). Thus
+  allowing us to investigate whether the previously observed compatibility effect is due to a
+facilitating influence of matching information or a deleterious influence of
+mismatching information, or both.}
 \keywords{keyword1, keyword2, keyword3}
 
 %%%%%%%%%%%%%%
