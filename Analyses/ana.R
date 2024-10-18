@@ -9,7 +9,7 @@ if (sys.nframe() == 0) {
 dat <- ReadIn()
 dat <- MyReformat(dat)
 N <- dat %>% vpInfo()
-dat <- MyExclusion(dat, ExcTime = TRUE, ExcError = TRUE)
+dat <- MyExclusion(dat, ExcTime = TRUE, ExcAcc = TRUE)
 dat %>% vpInfo()
 
 length(unique(dat$vpNum[dat$order == "speech-gesture"]))
