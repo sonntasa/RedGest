@@ -1224,6 +1224,7 @@ function genExpSeq() {
   exp.push(browser_check(PRMS.screenRes));
   exp.push(resize_browser());
   exp.push(PRELOAD_A);
+  exp.push(PRELOAD_B);
   exp.push(CONSENT_SCREEN);
   exp.push(SONA_INSTRUCTIONS);
   exp.push(vpInfoForm("../RequiredFiles/Common7+/vpInfoForm_de.html"));
@@ -1247,7 +1248,6 @@ function genExpSeq() {
     exp.push(BLOCK_FEEDBACK_A);
   }
 
-  exp.push(PRELOAD_B);
   exp.push(TASK_INSTRUCTIONS6);
   exp.push(TASK_INSTRUCTIONS7);
   exp.push(TRIAL_TIMELINE_PRACTICE_GESTURE);
