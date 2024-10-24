@@ -108,7 +108,7 @@ HeadAovER2 <- aovTable(HeadAovER2)
 ######################### 3: matching x 2: polarity ##########################
 # {{{
 dat_thumb_er <- MyExclusion(dat, ExcGesture = "Thumb")
-dat_thumb_rt <- MyExclusion(dat_head_er, ExcError = TRUE)
+dat_thumb_rt <- MyExclusion(dat_thumb_er, ExcError = TRUE)
 
 ################################################
 #                      RT                      #
